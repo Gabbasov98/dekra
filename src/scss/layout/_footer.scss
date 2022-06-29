@@ -1,0 +1,86 @@
+@import "vars";
+.footer {
+    padding: 35px 0 56px;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        width: 170px;
+        img {
+            width: 100%;
+            display: block;
+        }
+    }
+    &__phone {
+        margin-top: 35.4px;
+        display: block;
+        font-size: 22px;
+        line-height: 136%;
+        font-weight: 700;
+    }
+    &__mail,
+    &__address {
+        font-size: 16px;
+        line-height: 187.5%;
+        margin-top: 3.5px;
+    }
+    &__mail {
+        margin: 0;
+        color: $primary;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    &__links {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 28.5px 45px;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    &__socials {
+        display: flex;
+        align-items: center;
+        &-title {
+            font-size: 14px;
+            font-weight: 500;
+        }
+        &-items {
+            display: flex;
+            align-items: center;
+        }
+        &-item {
+            margin-left: 14px;
+            path {
+                transition: all .225s;
+            }
+            &:hover {
+                .path-bg {
+                    fill: $primary
+                }
+            }
+        }
+    }
+    &__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 50px;
+        margin-top: 50px;
+        border-top: 1px solid rgba($black, .15);
+    }
+    &__by,
+    &__copyright {
+        font-size: 14px;
+        line-height: 136%;
+        a {
+            color: $primary;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

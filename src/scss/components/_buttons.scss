@@ -1,0 +1,27 @@
+@import "../vars";
+.mbtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.arrow-btn {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    svg {
+        margin-left: 12px;
+        transition: all .225s;
+    }
+    &:hover {
+        svg {
+            transform: translateX(10px);
+        }
+    }
+}

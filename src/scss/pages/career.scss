@@ -1,0 +1,197 @@
+@import "../vars.scss";
+.career {
+    padding: 30px 0 40px;
+    &__title {
+        margin-top: 8px;
+    }
+    &__left {
+        padding: 70px 70px 70px 0;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            background-color: #F4F4F4;
+            width: calc(100% + 110px);
+            height: 100%;
+            right: 0;
+            top: 0;
+        }
+    }
+    &__right {
+        border-left: 4px solid #fff;
+        img {
+            width: calc(100% + 110px);
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    &__prof {
+        font-size: 22px;
+        line-height: 136%;
+    }
+    &__subtitle {
+        margin-top: 35px;
+    }
+    &__desc {
+        margin-top: 30px;
+        font-size: 16px;
+        line-height: 162.5%;
+        max-width: 400px;
+    }
+    &__list {
+        margin-top: 10px;
+    }
+}
+
+.career-info {
+    margin-top: 40px;
+    overflow: hidden;
+    &__inner {
+        display: grid;
+        grid-template-columns: 51.3% 48.7%;
+    }
+}
+
+.vacancies {
+    padding: 40px 0 43px;
+    &__inner {
+        background-color: $black;
+        color: #fff;
+        display: grid;
+        grid-template-columns: 51.64% 48.36%;
+    }
+    &__img {
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    &__content {
+        padding: 40px 64px 50px;
+    }
+    &__slider {
+        margin-top: 27px;
+        overflow: hidden;
+    }
+    &__subtitle {
+        max-width: 420px;
+    }
+    &__desc {
+        margin-top: 12px;
+    }
+    &__price {
+        margin-top: 21px;
+        color: $primary;
+    }
+    &__link {
+        margin-top: 34px;
+    }
+    .swiper {
+        &-pagination {
+            position: static;
+            margin-top: 18px;
+        }
+    }
+}
+
+.career-info2 {
+    color: #fff;
+    padding: 43px 0;
+    .career {
+        &__left {
+            padding: 62px 62px 62px 0;
+            position: relative;
+            &:before {
+                background-color: $primary;
+            }
+        }
+        &__right {
+            border-left: none;
+        }
+        &__co {
+            max-width: 425px;
+        }
+        &__desc {
+            margin-top: 19px;
+        }
+        &__list {
+            li {
+                &::before {
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.resume {
+    padding: 43px 0 26px;
+    &__inner {
+        display: grid;
+        grid-template-columns: 51.64% calc(48.36% - 65px);
+        gap: 65px;
+        padding-bottom: 57px;
+        border-bottom: 1px solid rgba($black, .15)
+    }
+    &__title {
+        margin-top: 34px;
+        max-width: 326px;
+    }
+    &__desc {
+        margin-top: 21px;
+        max-width: 590px;
+    }
+    &__form {
+        margin-top: 14px;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 17px;
+        &-wrap {
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+    &__hint {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 157%;
+        color: #707070;
+        a {
+            color: $primary;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__check {
+        max-width: 450px;
+    }
+    &__btn {
+        padding: 0;
+        width: 210px;
+        margin-top: 14px;
+    }
+    &__download {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 237%;
+        color: $primary;
+        margin-top: 18px;
+        svg {
+            margin-right: 10px;
+        }
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
+    }
+    .file-input {
+        margin-left: 31px;
+        flex-shrink: 0;
+    }
+}

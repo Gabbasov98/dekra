@@ -1,0 +1,45 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Команда ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class='header header--dark'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class='team'>
+                <div class='container'>
+                    <div class='breadcrumbs'>
+                        @@include('components/page-blocks/_breadcrumbs.html',{"second":"Команда","third":"","fourth":""})
+                    </div>
+                    <h1 class="team__title display2">Наша команда</h1>
+                    <div class="team__items">
+                        <a href="" class="team__item team__item--big team-card">
+                            @@include('components/cards/_team-card.html',{"img":"team","title":"Сергей Денисов","desc":"Генеральный директор, Управляющий партнер"})
+                        </a>
+                        <a href="" class="team__item team__item--big team-card">
+                            @@include('components/cards/_team-card.html',{"img":"team2","title":"Станислав Мироненко","desc":"Партнер, Председатель комитета по стратегии"})
+                        </a>
+                        <a href="" class="team__item team-card">
+                            @@include('components/cards/_team-card.html',{"img":"team3","title":"Виктор Мин","desc":"Заместитель генерального директора по строительным проектам"})
+                        </a>
+                        <a href="" class="team__item team-card">
+                            @@include('components/cards/_team-card.html',{"img":"team4","title":"Серджио Тровати","desc":"Заместитель генерального директора по строительным проектам"})
+                        </a>
+                        <a href="" class="team__item team-card">
+                            @@include('components/cards/_team-card.html',{"img":"team5","title":"Елена Зиновьева","desc":"Заместитель генерального директора по перспективному развитию"})
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

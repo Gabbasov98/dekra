@@ -1,0 +1,73 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Ход строительства ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class='header header--dark'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class='construct'>
+                <div class='container'>
+                    <div class='breadcrumbs'>
+                        @@include('components/page-blocks/_breadcrumbs.html',{"second":"Портфолио ","third":"ЖК «Сколково Парк для Жизни»","fourth":"Ход строительства"})
+                    </div>
+                    <h1 class="construct__title display2">Ход строительства</h1>
+                    <div class="construct__years">
+                        <a href="" class="construct__year construct__year--active">2022 г.</a>
+                        <a href="" class="construct__year">2021 г.</a>
+                        <a href="" class="construct__year">2020 г.</a>
+                    </div>
+                    <div class="construct__months">
+                        <a href="" class="construct__month construct__month--active">Июнь</a>
+                        <a href="" class="construct__month">Май</a>
+                        <a href="" class="construct__month">Апрель</a>
+                        <a href="" class="construct__month">Март</a>
+                        <a href="" class="construct__month">Февраль</a>
+                        <a href="" class="construct__month">Январь</a>
+                    </div>
+                </div>
+
+                <div class="progress__slider">
+                    <div class='swiper-container'>
+                        <div class='swiper-wrapper'>
+                            <div class='swiper-slide'>
+                                <img src="img/progress4.jpg" alt="">
+                            </div>
+                            <div class='swiper-slide'>
+                                <img src="img/progress5.jpg" alt="">
+                            </div>
+                            <div class='swiper-slide'>
+                                <img src="img/progress6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class='swiper-button-prev mbtn-primary'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.117" height="23.117" viewBox="0 0 14.117 23.117">
+                            <g transform="translate(1.058 1.059)">
+                              <path d="M73-156.473,85-167" transform="translate(-72.997 167.001)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                              <path d="M73-160l12,10.528" transform="translate(-72.997 170.473)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class='swiper-button-next mbtn-primary'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14.117" height="23.117" viewBox="0 0 14.117 23.117">
+                            <g transform="translate(1.058 1.059)">
+                              <path d="M85-156.473,73-167" transform="translate(-72.997 167.001)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                              <path d="M85-160,73-149.473" transform="translate(-72.997 170.473)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+@import "../vars.scss";
+.construct {
+    padding: 30px 0 40px;
+    overflow: hidden;
+    &__title {
+        margin-top: 8px;
+    }
+    &__years {
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__year {
+        margin: 10px 10px 0 0;
+        height: 44px;
+        min-width: 97px;
+        border: 1px solid $gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 16px;
+        font-size: 18px;
+        &:hover,
+        &--active {
+            background-color: $primary;
+            border-color: $primary;
+            color: #fff;
+        }
+        &--active {
+            pointer-events: none;
+        }
+    }
+    &__months {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__month {
+        margin: 15px 15px 0 0;
+        font-size: 18px;
+        line-height: 200%;
+        padding-bottom: 2.5px;
+        border-bottom: 1px solid transparent;
+        &--active {
+            font-weight: bold;
+            border-color: $primary;
+        }
+    }
+    .progress__slider {
+        margin-top: 36.5px;
+    }
+}

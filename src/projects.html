@@ -1,4 +1,4 @@
-<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Проекты", "description":"", "keywords":"",})
 
 <body>
     <div class="wrapper">
@@ -7,7 +7,37 @@
         </header>
         <main class="content">
 
-
+            <section class='projects'>
+                <div class='container'>
+                    <div class='breadcrumbs'>
+                        @@include('components/page-blocks/_breadcrumbs.html',{"second":"Портфолио","third":"","fourth":""})
+                    </div>
+                    <h1 class="projects__title display2">Портфолио проектов</h1>
+                    <div class="projects__items">
+                        <a href="" class="projects__item projects__item--big project-card">
+                            @@include('components/cards/_project-card.html',{"img":"project6","title":"Деловой квартал класса А «Сколково Парк»","desc":"Многофункциональный  административно-торговый комплекс"})
+                        </a>
+                        <a href="" class="projects__item project-card">
+                            @@include('components/cards/_project-card.html',{"img":"project7","title":"Башня 2000","desc":"Жилой комплекс класса Premium"})
+                        </a>
+                        <a href="" class="projects__item project-card">
+                            @@include('components/cards/_project-card.html',{"img":"project4","title":"Деловой квартал класса А «Сколково Парк»","desc":"Многофункциональный  административно-торговый комплекс"})
+                        </a>
+                        <a href="" class="projects__item projects__item--big project-card">
+                            @@include('components/cards/_project-card.html',{"img":"project8","title":"ЖК «Сколково Парк для Жизни»","desc":"Жилой комплекс класса Premium"})
+                        </a>
+                        <a href="" class="projects__item project-card">
+                            @@include('components/cards/_project-card.html',{"img":"project9","title":"ЖК «Остоженка»","desc":"Жилой комплекс премиум класса в центре Москвы"})
+                        </a>
+                        <a href="" class="projects__item project-card">
+                            @@include('components/cards/_project-card.html',{"img":"project10","title":"Частные коттеджи в Барвихе","desc":"Консалтинг в рамках Dekra+"})
+                        </a>
+                        <a href="" class="projects__item project-card">
+                            @@include('components/cards/_project-card.html',{"img":"project11","title":"Деловой центр Golden gate","desc":"Многофункциональный комплекс"})
+                        </a>
+                    </div>
+                </div>
+            </section>
 
         </main>
         <footer class='footer'>

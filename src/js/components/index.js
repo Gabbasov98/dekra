@@ -1,3 +1,19 @@
+function mainSlider() {
+    var swiper = new Swiper('.main .swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 0,
+        allowTouchMove: false,
+        autoplay: {
+            delay: 5000,
+        },
+        speed: 2000,
+        effect: 'fade',
+        fadeEffect: {
+            crossFade: true
+        },
+    })
+}
+
 function collectionSlider() {
     var swiper = new Swiper('.collection .swiper-container', {
         slidesPerView: 1,
@@ -18,6 +34,8 @@ function collectionSlider() {
     })
 }
 
+
+mainSlider()
 collectionSlider()
 
 let mainImg = document.querySelector(".main__img")
@@ -28,7 +46,11 @@ let mainDesc = document.querySelector(".main__desc")
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
-    animateMainContent()
+
+    if (mainImg && mainTitle && mainDesc) {
+        animateMainContent()
+    }
+
 };
 
 

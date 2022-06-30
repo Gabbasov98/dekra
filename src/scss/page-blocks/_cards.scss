@@ -39,3 +39,111 @@
         padding: 0 8px;
     }
 }
+
+.team-card {
+    padding: 20px 20px 40px;
+    border: 1px solid $gray;
+    display: block;
+    transition: all .225s;
+    &:hover {
+        color: #fff;
+        background-color: $black;
+        border-color: $black;
+    }
+    &__img {
+        height: 365px;
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 101%;
+            height: 101%;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    &__name {
+        font-size: 26px;
+        line-height: 123%;
+        font-weight: 600;
+        margin-top: 33.4px;
+    }
+    &__prof {
+        margin-top: 12.6px;
+    }
+}
+
+.bio-card {
+    &.slideToggle-block--active {
+        .bio-card {
+            &__btn {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+    &__show {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 40px;
+        min-height: 80px;
+        background-color: rgba(#fff, .4);
+        box-shadow: 0 3px 14px rgba(#000, .16);
+        cursor: pointer;
+    }
+    &__btn {
+        svg {
+            transition: all .225s;
+        }
+    }
+    &__wrap {
+        padding: 30px 60px 15px;
+        max-width: 725px;
+    }
+}
+
+.news-card {
+    background: #F4F4F4;
+    &:hover {
+        color: $black;
+        .news-card__arrow {
+            svg {
+                transform: translate(20px, 2px);
+            }
+        }
+    }
+    &__img {
+        height: 270px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    }
+    &__content {
+        padding: 38px 27px 49px;
+    }
+    &__date {
+        font-size: 18px;
+        line-height: 211%;
+        font-weight: 700;
+    }
+    &__desc {
+        margin-top: 16.5px;
+    }
+    &__arrow {
+        svg {
+            transition: all .225s;
+            transform: translate(10px, 2px);
+        }
+    }
+}

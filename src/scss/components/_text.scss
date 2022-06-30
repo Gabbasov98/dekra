@@ -4,8 +4,74 @@
     line-height: 166%;
 }
 
+.body-text2 {
+    font-size: 16px;
+    line-height: 162.5%;
+}
+
+p {
+    line-height: inherit;
+    &:not(:last-child) {
+        margin-bottom: 17px;
+    }
+}
+
+.orange-text {
+    color: $primary;
+}
+
+.display2 {
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 600;
+}
+
 .display3 {
     font-size: 30px;
     line-height: 160%;
     font-weight: 600;
+}
+
+.display4 {
+    font-size: 32px;
+    line-height: 134%;
+    font-weight: 500;
+    span {
+        font-weight: 700;
+    }
+}
+
+.display5 {
+    font-size: 22px;
+    line-height: 136%;
+    font-weight: 600;
+}
+
+.mlist {
+    li {
+        padding-left: 30px;
+        position: relative;
+        font-size: 16px;
+        line-height: 162.5%;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 16px;
+            height: 2px;
+            border-radius: 4px;
+            background-color: $primary;
+            left: 0;
+            top: 11px;
+        }
+        a {
+            color: $primary;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }

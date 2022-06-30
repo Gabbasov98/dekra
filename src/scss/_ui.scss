@@ -2,32 +2,92 @@
 @import 'components/_text.scss';
 @import 'components/_buttons.scss';
 @import 'components/_fonts.scss';
-.form-group {
-    position: relative;
-    margin: 0;
-    margin-bottom: 30px;
-    input {
-        border: none;
-        border-bottom: 1px solid #000000;
-        padding: 0 10px;
-        height: 47px;
-        width: 100%;
-        font-size: 18px;
-        background-color: transparent;
-        color: #000;
-        &::placeholder {
-            color: #000;
-        }
-        &:focus {
-            &::placeholder {
-                color: rgba(#000, 0.3);
+.swiper {
+    &-pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-bullet {
+            width: 14px;
+            height: 3px;
+            border-radius: 2px;
+            background: #9F9C9C;
+            margin: 0 5px !important;
+            opacity: 1;
+            &-active {
+                background: $primary;
             }
         }
     }
 }
 
-.check {
+.mfg {
     position: relative;
+    margin: 0;
+    width: 100%;
+    select,
+    input {
+        border: none;
+        border-bottom: 1px solid rgba(#A3A3A3, .5);
+        padding: 18px 0;
+        width: 100%;
+        font-size: 18px;
+        line-height: 166%;
+        background-color: transparent;
+        color: $black;
+        &::placeholder {
+            color: #999999;
+        }
+    }
+    select {
+        color: #999999;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+        background-image: url(../img/select-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: right 6px center;
+        &::-ms-expand {
+            display: none;
+        }
+    }
+    .selected {
+        color: $black;
+    }
+}
+
+.file-input {
+    width: 210px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 11px;
+    background-color: #F4F4F4;
+    font-size: 14px;
+    &:hover {
+        background-color: darken(#f4f4f4, 5%);
+    }
+    svg {
+        margin-right: 15px;
+    }
+    input {
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+.mcheck {
+    position: relative;
+    color: #707070;
     input {
         position: absolute;
         opacity: 0;
@@ -39,8 +99,9 @@
         cursor: pointer;
         &:checked+label {
             &::before {
-                // background-color: $green;
-                border: 3px solid #fff;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/check.svg);
             }
         }
         &:disabled+label {
@@ -49,25 +110,80 @@
         }
     }
     label {
-        padding-left: 40px;
+        padding-left: 30px;
         position: relative;
-        min-height: 20px;
+        min-height: 22px;
         font-size: 14px;
-        line-height: 20px;
+        line-height: 22px;
         cursor: pointer;
+        display: block;
         &:before {
             content: '';
             position: absolute;
             z-index: 1;
-            border-radius: 2px;
-            background: rgba(255, 255, 255, 0.01);
-            border: 1px solid rgba(255, 255, 255, 0.45);
-            width: 20px;
-            height: 20px;
+            border: 1px solid #707070;
+            width: 18px;
+            height: 18px;
             left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            transition: all .100s;
+            top: 3px;
         }
+    }
+    a {
+        text-decoration: underline;
+        position: relative;
+        z-index: 3;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+.pagination {
+    margin-top: 55px;
+    display: flex;
+    align-items: center;
+    &__btn,
+    &__item {
+        height: 40px;
+        min-width: 35px;
+        border: 1px solid $gray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6px;
+        font-size: 18px;
+        &:hover,
+        &--active {
+            background-color: $primary;
+            border-color: $primary;
+            color: #fff;
+        }
+    }
+    &__btn {
+        &--prev {
+            margin-right: 42px;
+        }
+        &--next {
+            margin-left: 42px;
+        }
+        &:hover {
+            path {
+                stroke: #fff;
+            }
+        }
+    }
+    &__item {
+        margin: 0 5px;
+        &--active {
+            pointer-events: none;
+        }
+    }
+}
+
+.slideToggle-block {
+    &__hidden {
+        height: 0;
+        overflow: hidden;
+        transition: all .425s;
     }
 }

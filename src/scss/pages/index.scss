@@ -1,24 +1,49 @@
 @import "../vars.scss";
 .main {
-    background-image: url(../img/main-bg.webp);
-    background-size: cover;
-    background-position: center;
     position: relative;
     color: #fff;
     margin-top: -160px;
+    &--project {
+        &::before {
+            background-color: rgba(#01151F, .35);
+        }
+        .main {
+            &__desc {
+                font-size: 22px;
+                line-height: 154%;
+                max-width: 540px;
+            }
+        }
+    }
     &:before {
         content: '';
         position: absolute;
-        z-index: 1;
+        z-index: 2;
         background-color: rgba(#01151F, .3);
         width: 100%;
         height: 100%;
         left: 0;
         top: 0;
     }
+    &__slider {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .swiper {
+            &-container {
+                height: 100%;
+            }
+            &-slide {
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
     &__inner {
         position: relative;
-        z-index: 2;
+        z-index: 3;
         padding: 252px 0 312px;
     }
     &__img {
@@ -63,9 +88,9 @@
 .info {
     padding-bottom: 26px;
     &__inner {
-        margin-top: -160px;
+        margin-top: -162px;
         position: relative;
-        z-index: 2;
+        z-index: 4;
         background-color: #fff;
         box-shadow: 0 0 30px rgba(#000, .12);
     }
@@ -74,7 +99,8 @@
         grid-template-columns: repeat(4, 25%);
     }
     &__item {
-        padding: 34px 20px 20px;
+        padding: 34px 20px 10px;
+        height: 160px;
         text-align: center;
         &:not(:last-child) {
             border-right: 1px solid rgba($gray, .6);
@@ -84,11 +110,15 @@
             line-height: 136%;
             font-weight: 600;
             color: $primary;
+            span {
+                font-size: 22px;
+            }
         }
         &-desc {
             margin: 3px auto 0;
             font-size: 16px;
             line-height: 150%;
+            font-weight: 500;
             max-width: 190px;
         }
     }
@@ -106,53 +136,75 @@
     &__desc {
         padding: 8px 0 0 20.5px;
     }
-    &__video {
-        margin-top: 105px;
-        position: relative;
-        &:before {
-            content: '';
-            position: absolute;
-            z-index: 1;
-            background-color: rgba(#01151F, .3);
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
+}
+
+.video {
+    margin-top: 105px;
+    position: relative;
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1;
+        background-color: rgba(#01151F, .3);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    &__btn {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 290px;
+        color: #fff;
+    }
+    &__icon {
+        border: 3px solid #fff;
+        width: 104px;
+        height: 104px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        svg {
+            transform: translateX(4px);
         }
-        img {
-            width: 100%;
-            display: block;
-        }
-        &-btn {
-            z-index: 2;
-            display: flex;
-            flex-direction: column;
-            position: absolute;
-            top: 60%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            max-width: 290px;
-            color: #fff;
-        }
-        &-icon {
-            border: 3px solid #fff;
-            width: 104px;
-            height: 104px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto;
-            svg {
-                transform: translateX(4px);
+    }
+    &__title {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 29px;
+        line-height: 138%;
+        font-weight: 600;
+    }
+    &--small {
+        .video {
+            &__btn {
+                top: 55%;
             }
-        }
-        &-title {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 29px;
-            line-height: 138%;
-            font-weight: 600;
+            &__icon {
+                width: 78px;
+                height: 78px;
+                svg {
+                    width: 34px;
+                    height: auto;
+                }
+            }
+            &__title {
+                margin-top: 15px;
+                font-size: 22px;
+            }
         }
     }
 }
@@ -187,6 +239,21 @@
     }
     &__link {
         margin-top: 20px;
+    }
+    &__download {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 237%;
+        color: $primary;
+        svg {
+            margin-right: 10px;
+        }
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -300,7 +367,15 @@
     &__item {
         margin: 10px 10px 0 0;
         width: 220px;
-        img {
+        display: block;
+        position: relative;
+        &:hover {
+            &:before,
+            .blog-index__item-link {
+                opacity: 1;
+            }
+        }
+        &>img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -313,6 +388,32 @@
         }
         &:nth-child(3) {
             width: calc(100% - 470px);
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            background-color: rgba($primary, .7);
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            transition: all .225s;
+            opacity: 0;
+        }
+        &-link {
+            z-index: 2;
+            transition: all .225s;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
         }
     }
 }

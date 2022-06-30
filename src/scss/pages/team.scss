@@ -1,0 +1,59 @@
+@import "../vars.scss";
+.team {
+    padding: 30px 0 40px;
+    &__title {
+        margin-top: 8px;
+    }
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -20px;
+    }
+    &__item {
+        margin-top: 60px;
+        width: calc(100% / 3);
+        &:nth-child(2),
+        &:nth-child(4),
+        &:nth-child(5) {
+            border-left: none;
+        }
+        &--big {
+            width: 50%;
+            .team-card {
+                &__img {
+                    height: 460px;
+                }
+            }
+        }
+    }
+}
+
+.team-item {
+    padding: 30px 0 40px;
+    &__inner {
+        margin-top: 22px;
+        display: grid;
+        grid-template-columns: 48.3% auto;
+        gap: 40px;
+        padding-bottom: 54px;
+        border-bottom: 1px solid rgba($black, .15);
+    }
+    &__left {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+    &__subtitle {
+        margin-top: 9.6px;
+        max-width: 360px;
+    }
+    &__text {
+        margin-top: 25px;
+        max-width: 525px;
+    }
+    &__link {
+        margin-top: 30px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,113 @@
+@import "../vars.scss";
+.project-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    min-height: 300px;
+    &__left {
+        border-right: 1px solid rgba($gray, .6);
+        padding: 40px 65px;
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+        padding: 40px 65px;
+    }
+    &__props {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+    &__prop {
+        &-title {
+            color: $primary;
+            font-size: 38px;
+            span {
+                font-size: 22px;
+            }
+        }
+        &-desc {
+            font-size: 16px;
+            line-height: 150%;
+            font-weight: 500;
+        }
+    }
+    &__items {
+        margin-top: 30px;
+    }
+    &__item {
+        font-size: 16px;
+        line-height: 162.5%;
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+        span {
+            font-weight: 700;
+        }
+    }
+    &__desc {
+        font-style: italic;
+    }
+}
+
+.project-desc {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 70px;
+    &__left {
+        padding: 80px 52px 80px 65px;
+        background-color: $black;
+        color: #fff;
+        display: flex;
+        align-items: center;
+    }
+    &__right {
+        .video {
+            height: 100%;
+            margin: 0;
+        }
+    }
+}
+
+.specific {
+    padding: 26px 0;
+    &__items {
+        margin-top: 26px;
+        column-count: 2;
+        column-gap: 76px;
+    }
+}
+
+.progress {
+    padding: 26px 0;
+    overflow: hidden;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__slider {
+        margin-top: 54px;
+        position: relative;
+        .swiper {
+            &-container {
+                width: 710px;
+                max-width: 100%;
+                margin: 0 auto;
+            }
+            &-button {
+                &-prev,
+                &-next {
+                    width: 43px;
+                    height: 49px;
+                    padding: 0;
+                }
+                &-prev {
+                    left: -3px;
+                }
+                &-next {
+                    right: -3px;
+                }
+            }
+        }
+    }
+}

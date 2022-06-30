@@ -1,0 +1,75 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Новости ", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class='header header--dark'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class='news'>
+                <div class='container'>
+                    <div class="news__inner">
+                        <div class='breadcrumbs'>
+                            @@include('components/page-blocks/_breadcrumbs.html',{"second":"Новости","third":"","fourth":""})
+                        </div>
+                        <h1 class="news__title display2">Новости и события</h1>
+
+                        <div class="news__items">
+                            <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news7"})
+                        </a>
+                            <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news2"})
+                        </a>
+                            <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news3"})
+                        </a>
+                            <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news4"})
+                        </a>
+                            <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news5"})
+                        </a>
+                            <a href="" class="news-card">
+                            @@include('components/cards/_news-card.html',{"img":"news6"})
+                        </a>
+                        </div>
+
+                        <div class="pagination">
+                            <a href="" class="pagination__btn pagination__btn--prev">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18.117" viewBox="0 0 11.115 18.117">
+                                <g transform="translate(1.058 1.058)">
+                                  <path d="M73-159.127,82-167" transform="translate(-72.997 167.001)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                                  <path d="M73-160l9,7.874" transform="translate(-72.997 168.127)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                            </a>
+                            <a href="" class="pagination__item pagination__item--active">1</a>
+                            <a href="" class="pagination__item">2</a>
+                            <a href="" class="pagination__item">3</a>
+                            <a href="" class="pagination__item">...</a>
+                            <a href="" class="pagination__item">15</a>
+                            <a href="" class="pagination__btn pagination__btn--next">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="11.115" height="18.117" viewBox="0 0 11.115 18.117">
+                                <g transform="translate(1.058 1.058)">
+                                  <path d="M82-159.127,73-167" transform="translate(-72.997 167.001)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                                  <path d="M82-160l-9,7.874" transform="translate(-72.997 168.127)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                                </g>
+                            </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

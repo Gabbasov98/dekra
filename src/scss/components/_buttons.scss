@@ -10,18 +10,49 @@
     }
 }
 
-.arrow-btn {
+.mbtn-primary {
+    background-color: $primary;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    height: 56px;
+    padding: 0 42px;
+    &:hover {
+        color: #fff;
+        background-color: darken($primary, 5%);
+    }
+}
+
+.arrow-btn,
+.arrow-btn2 {
     display: flex;
     align-items: center;
     font-size: 16px;
     font-weight: 500;
-    svg {
+    svg,
+    img {
         margin-left: 12px;
         transition: all .225s;
+        width: 30px;
+        height: auto;
     }
     &:hover {
+        img,
         svg {
             transform: translateX(10px);
+        }
+    }
+}
+
+.arrow-btn2 {
+    svg,
+    img {
+        margin: 0 12px 0 0;
+    }
+    &:hover {
+        img,
+        svg {
+            transform: translateX(-10px);
         }
     }
 }

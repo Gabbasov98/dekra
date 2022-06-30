@@ -1,0 +1,38 @@
+@import "../vars.scss";
+.doc {
+    padding: 30px 0 40px;
+    &__inner {
+        padding-bottom: 75px;
+        border-bottom: 1px solid rgba($black, .15)
+    }
+    &__title {
+        margin-top: 8px;
+    }
+    &__items {
+        margin-top: 40px;
+    }
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 17px;
+        }
+    }
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+    &__icon {
+        margin-right: 11px;
+        flex-shrink: 0;
+    }
+    &__subitems {
+        padding: 15px 0 23px 28px;
+    }
+    &__subitem {
+        display: block;
+        color: $primary;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

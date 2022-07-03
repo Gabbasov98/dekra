@@ -7,6 +7,7 @@
     &__desc {
         margin-top: 40px;
         max-width: 1010px;
+        font-weight: 500;
     }
 }
 
@@ -70,6 +71,7 @@
     padding: 27px 0;
     &__title {
         color: $primary;
+        max-width: 1000px;
     }
     &__items {
         margin-top: 25px;

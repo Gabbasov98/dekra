@@ -1,2 +1,9 @@
 @import '../_mixins';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@font-face {
+    font-family: "lg";
+    src: url('../fonts/lg.ttf') format('ttf'), url('../fonts/lg.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

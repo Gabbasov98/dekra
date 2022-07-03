@@ -13,6 +13,11 @@
         height: 395px;
         position: relative;
         overflow: hidden;
+        a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
         img {
             display: block;
             width: 100%;
@@ -31,12 +36,14 @@
         margin-top: 25px;
         padding: 0 8px;
         max-width: 300px;
+        display: block;
     }
     &__desc {
         font-size: 16px;
         line-height: 150%;
         margin-top: 15px;
         padding: 0 8px;
+        max-width: 350px;
     }
 }
 

@@ -20,8 +20,8 @@
         }
         img {
             display: block;
-            width: 100%;
-            height: 100%;
+            width: 102%;
+            height: 102%;
             object-fit: cover;
             position: absolute;
             left: 50%;
@@ -103,7 +103,7 @@
         padding: 10px 40px;
         min-height: 80px;
         background-color: rgba(#fff, .4);
-        box-shadow: 0 3px 14px rgba(#000, .16);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, .05);
         cursor: pointer;
     }
     &__btn {
@@ -151,6 +151,44 @@
         svg {
             transition: all .225s;
             transform: translate(10px, 2px);
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .project-card {
+        padding: 16px;
+        &__img {
+            height: 308px;
+        }
+        &__title {
+            padding: 0;
+            margin-top: 18px;
+            font-size: 20px;
+        }
+        &__desc {
+            margin-top: 10px;
+            padding: 0;
+            font-size: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .project-card {
+        &__title {
+            font-size: 18px;
+        }
+        &__desc {
+            font-size: 13px;
+        }
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .project-card {
+        &__img {
+            height: 270px;
         }
     }
 }

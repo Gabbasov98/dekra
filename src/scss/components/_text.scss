@@ -75,3 +75,15 @@ p {
         }
     }
 }
+
+@media screen and (max-width: 992px) {
+    .display3 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .display3 {
+        font-size: 22px;
+    }
+}

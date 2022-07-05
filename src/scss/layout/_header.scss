@@ -33,9 +33,6 @@
             color: $black;
         }
     }
-    .container {
-        // width: 100%;
-    }
     &__inner {
         padding: 65px 0 41px;
         display: flex;
@@ -62,23 +59,26 @@
             &:nth-child(1) {
                 position: absolute;
                 top: 0;
-                left: 0;
+                width: 50%;
             }
             &:nth-child(3) {
                 position: absolute;
                 bottom: 0;
-                left: 0;
+                right: 0;
+                width: 50%;
             }
         }
         &--active {
             span {
                 &:nth-child(1) {
+                    width: 100%;
                     transform: translateY(11px) rotate(-45deg);
                 }
                 &:nth-child(2) {
                     transform: scale(0);
                 }
                 &:nth-child(3) {
+                    width: 100%;
                     transform: translateY(-11px) rotate(45deg);
                 }
             }
@@ -144,6 +144,7 @@
         }
         &--active {
             font-weight: 700;
+            color: $primary;
             &::before {
                 opacity: 1;
             }
@@ -164,6 +165,7 @@
     opacity: 0;
     pointer-events: none;
     transition: all .225s;
+    overflow-y: auto;
     &__grid {
         display: grid;
         grid-template-columns: 300px 300px;
@@ -172,5 +174,68 @@
     &__link {
         font-size: 20px;
         font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 1450px) {
+    .header {
+        &__burger {
+            position: relative;
+            left: unset;
+            top: unset;
+            // align-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        &__inner {
+            padding: 27px 0;
+        }
+    }
+    .nav {
+        display: none;
+    }
+    .menu {
+        padding: 120px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        padding: 95px 0;
+        &__grid {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        &__logo {
+            width: 104px;
+        }
+        &__burger {
+            margin-right: 23px;
+            width: 24px;
+            height: 20px;
+            &--active {
+                span {
+                    &:nth-child(1) {
+                        transform: translateY(9px) rotate(-45deg);
+                    }
+                    &:nth-child(3) {
+                        transform: translateY(-9px) rotate(45deg);
+                    }
+                }
+            }
+        }
+        &__lang {
+            width: 44px;
+            height: 47px;
+            font-size: 13px;
+        }
     }
 }

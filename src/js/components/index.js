@@ -25,9 +25,12 @@ function collectionSlider() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 2,
+                slidesPerView: 1.1,
             },
-            480: {
+            360: {
+                slidesPerView: "auto",
+            },
+            1200: {
                 slidesPerView: 3,
             },
         }

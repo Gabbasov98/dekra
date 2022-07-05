@@ -12,8 +12,10 @@
             display: block;
         }
     }
-    &__phone {
+    &__info {
         margin-top: 35.4px;
+    }
+    &__phone {
         display: block;
         font-size: 22px;
         line-height: 136%;
@@ -44,29 +46,6 @@
             font-weight: 700;
         }
     }
-    &__socials {
-        display: flex;
-        align-items: center;
-        &-title {
-            font-size: 14px;
-            font-weight: 500;
-        }
-        &-items {
-            display: flex;
-            align-items: center;
-        }
-        &-item {
-            margin-left: 14px;
-            path {
-                transition: all .225s;
-            }
-            &:hover {
-                .path-bg {
-                    fill: $primary
-                }
-            }
-        }
-    }
     &__bottom {
         display: flex;
         align-items: center;
@@ -84,6 +63,91 @@
             &:hover {
                 text-decoration: underline;
             }
+        }
+    }
+    &__search {
+        width: 220px;
+        position: relative;
+        margin-top: -13px;
+        &-btn {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        input {
+            padding: 12px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        padding: 24px 0 33px;
+        &__col {
+            &:nth-child(3) {
+                display: none;
+            }
+        }
+        &__bottom {
+            margin-top: 30px;
+            padding-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &__links {
+            gap: 20px;
+        }
+        &__link {
+            font-size: 12px;
+        }
+        &__phone {
+            font-size: 18px;
+        }
+        &__mail,
+        &__address {
+            font-size: 12px;
+        }
+        &__copyright,
+        &__by {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        &__inner {
+            padding-top: 60px;
+            position: relative;
+            flex-direction: column-reverse;
+        }
+        &__logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 104px;
+        }
+        &__info {
+            margin-top: 23px;
+        }
+        &__bottom {
+            display: block;
+        }
+        &__by {
+            margin-top: 8px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer {
+        &__links {
+            grid-template-columns: 1fr;
+            gap: 15px;
         }
     }
 }

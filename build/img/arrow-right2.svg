@@ -1,1 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="30" height="15.127"><g fill="none"><path d="M0 0h30v15H0z"/><path d="M1.14 7.623h27.642m.001.06l-7.435-6.507m7.435 6.385l-7.435 6.507" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="15.127" viewBox="0 0 30 15.127">
+  <g id="arrow-right2" transform="translate(0 0.143)">
+    <rect id="rect81" width="30" height="15" transform="translate(0 -0.143)" fill="none"/>
+    <path id="path83" d="M51-160H78.642" transform="translate(-49.86 167.48)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+    <path id="path85" d="M80.435-160.493,73-167" transform="translate(-51.652 168.033)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+    <path id="path87" d="M80.435-160,73-153.493" transform="translate(-51.652 167.418)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+  </g>
+</svg>

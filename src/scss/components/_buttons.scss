@@ -56,3 +56,15 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .arrow-btn,
+    .arrow-btn2 {
+        font-size: 13px;
+        svg,
+        img {
+            width: 20px;
+            height: auto;
+        }
+    }
+}

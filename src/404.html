@@ -1,0 +1,41 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Проекты", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        <header class='header header--dark'>
+            @@include('components/page-blocks/_header.html')
+        </header>
+        <main class="content">
+
+            <section class='error404'>
+                <div class='container'>
+                    <div class='breadcrumbs'>
+                        @@include('components/page-blocks/_breadcrumbs.html',{"second":"Страница не найдена","third":"","fourth":""})
+                    </div>
+                    <h1 class="error404__title display2">Страница не найдена</h1>
+
+                    <div class="error404__subtitle">404</div>
+                    <div class="error404__hint body-text2">Не нашли необходимую информацию?</div>
+
+                    <a href="" class="error404__link arrow-btn2">
+                        <svg id="Group" xmlns="http://www.w3.org/2000/svg" width="30" height="15.127" viewBox="0 0 30 15.127">
+                            <rect id="rect81" width="30" height="15" fill="none"/>
+                            <path id="path83" d="M78.642-160H51" transform="translate(-49.781 167.622)" fill="none" stroke="#d66d2c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                            <path id="path85" d="M73-160.493,80.435-167" transform="translate(-71.78 168.176)" fill="none" stroke="#d66d2c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                            <path id="path87" d="M73-160l7.438,6.508" transform="translate(-71.78 167.561)" fill="none" stroke="#d66d2c" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+                        </svg>
+                        <span>Вернуться на главную</span>
+                    </a>
+                </div>
+            </section>
+
+        </main>
+        <footer class='footer'>
+            @@include('components/page-blocks/_footer.html')
+        </footer>
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

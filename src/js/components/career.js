@@ -21,6 +21,9 @@ console.log(screenWidth);
 
 
 function setCareerImgWidth() {
+    if(window.innerWidth<768){
+        return
+    }
     careerImages.forEach(el => {
         let width = screenWidth / 100 * 48.7
         console.log(width);

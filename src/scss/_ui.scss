@@ -142,16 +142,17 @@
     margin-top: 55px;
     display: flex;
     align-items: center;
-    &__btn,
+    justify-content: center;
+    &__btn {}
     &__item {
         height: 40px;
         min-width: 35px;
-        border: 0.5px solid #D9D5D5;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0 6px;
         font-size: 18px;
+        border-radius: 1px;
         &:hover,
         &--active {
             background-color: $primary;
@@ -168,12 +169,12 @@
         }
         &:hover {
             path {
-                stroke: #fff;
+                stroke: $black;
             }
         }
     }
     &__item {
-        margin: 0 5px;
+        margin: 0 3px;
         &--active {
             pointer-events: none;
         }
@@ -185,5 +186,47 @@
         height: 0;
         overflow: hidden;
         transition: all .425s;
+    }
+}
+
+.search-field {
+    position: relative;
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    input {
+        font-size: 14px;
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .mfg{
+        input{
+            padding: 12px 0;
+            font-size: 14px;
+        }
+    }
+    .mcheck{
+        label{
+            font-size: 11px;
+            line-height: 16px;
+            &::before{
+                top: 5px;
+            }
+        }
+    }
+    .file-input{
+        height: 40px;
+        width: 175px;
+        font-size: 12px;
+        svg{
+            width: 16px;
+            height: auto;
+            margin-right: 6.8px;
+        }
     }
 }

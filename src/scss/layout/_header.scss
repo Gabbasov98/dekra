@@ -175,6 +175,9 @@
         font-size: 20px;
         font-weight: 500;
     }
+    &__search {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1450px) {
@@ -191,7 +194,7 @@
 @media screen and (max-width: 992px) {
     .header {
         &__inner {
-            padding: 27px 0;
+            padding: 24px 0;
         }
     }
     .nav {
@@ -199,6 +202,45 @@
     }
     .menu {
         padding: 120px 0;
+        &__inner {
+            padding: 0 88px;
+        }
+        &__info {
+            margin-top: 55px;
+        }
+        &__search {
+            display: block;
+            input {
+                border-color: #606060;
+                color: #fff;
+                &::placeholder {
+                    color: #727272;
+                }
+            }
+        }
+        &__contacts {
+            margin-top: 43px;
+        }
+        &__phone {
+            display: block;
+            font-size: 18px;
+            line-height: 136%;
+            font-weight: 700;
+        }
+        &__mail,
+        &__address {
+            font-size: 14px;
+            line-height: 187.5%;
+            margin-top: 3.5px;
+        }
+        &__mail {
+            font-size: 12px;
+            margin: 0;
+            color: $primary;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 }
 
@@ -208,6 +250,26 @@
         &__grid {
             grid-template-columns: 1fr;
             gap: 15px;
+        }
+        &__link {
+            font-size: 15px;
+            display: flex;
+            a {
+                display: inline-flex;
+                padding-bottom: 3px;
+                border-bottom: 1px solid transparent;
+                &:hover {
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
+            &--active {
+                a {
+                    font-weight: 700;
+                    border-color: #fff;
+                    color: #fff;
+                }
+            }
         }
     }
 }
@@ -236,6 +298,19 @@
             width: 44px;
             height: 47px;
             font-size: 13px;
+        }
+    }
+    .menu {
+        &__inner {
+            padding: 0 47px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .menu {
+        &__inner {
+            padding: 0 10px;
         }
     }
 }

@@ -1,0 +1,18 @@
+@import "../vars.scss";
+.error404 {
+    padding: 30px 0 50px;
+    &__title {
+        margin-top: 8px;
+    }
+    &__link {
+        margin-top: 95px;
+    }
+    &__subtitle {
+        color: $primary;
+        font-size: 100px;
+        margin-top: 25px;
+    }
+    &__hint {
+        margin-top: -10px;
+    }
+}

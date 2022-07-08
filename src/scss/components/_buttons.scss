@@ -23,12 +23,22 @@
     }
 }
 
+.mbtn-gray {
+    border: 1px solid #DCDCDC;
+    color: $black;
+    &:hover {
+        border-color: $black;
+        background-color: $black;
+        color: #fff;
+    }
+}
+
 .arrow-btn,
 .arrow-btn2 {
     display: flex;
     align-items: center;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     svg,
     img {
         margin-left: 12px;
@@ -57,10 +67,18 @@
     }
 }
 
+@media screen and (max-width: 992px){
+    .mbtn-primary{
+        height: 52px;
+        font-size: 15px;
+    }
+}
+
 @media screen and (max-width: 576px) {
     .arrow-btn,
     .arrow-btn2 {
         font-size: 13px;
+        font-weight: 500;
         svg,
         img {
             width: 20px;

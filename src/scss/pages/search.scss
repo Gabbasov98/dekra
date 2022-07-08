@@ -1,0 +1,22 @@
+@import "../vars.scss";
+.search {
+    padding: 30px 0 50px;
+    &__title {
+        margin-top: 8px;
+    }
+    &__field {
+        max-width: 590px;
+        margin-top: 58px;
+    }
+    &__found {
+        margin-top: 43px;
+        color: #777777;
+    }
+    &__hint {
+        max-width: 370px;
+        margin-top: 26px;
+    }
+    &__link {
+        margin-top: 50px;
+    }
+}

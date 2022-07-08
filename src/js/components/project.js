@@ -8,6 +8,11 @@ function progressSlider() {
             nextEl: '.progress__slider .swiper-button-next',
             prevEl: '.progress__slider .swiper-button-prev',
         },
+        pagination: {
+            el: '.progress__slider .swiper-pagination',
+            type: 'bullets',
+            clickable: true,
+        },
     })
 }
 

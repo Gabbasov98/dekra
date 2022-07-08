@@ -136,6 +136,12 @@
         padding-bottom: 57px;
         border-bottom: 1px solid rgba($black, .15)
     }
+    &__left{
+        img{
+            width: 100%;
+            display: block;
+        }
+    }
     &__title {
         margin-top: 34px;
         max-width: 326px;
@@ -193,5 +199,154 @@
     .file-input {
         margin-left: 31px;
         flex-shrink: 0;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .career{
+        &__left{
+            padding: 34px 34px 34px 0;
+        }
+        &__desc{
+            margin-top: 20px;
+        }
+    }
+    .career-info{
+        background-color: #F4F4F4;
+    }
+    .career-info2{
+        background-color: $primary;
+        padding: 0;
+        margin-bottom: 26px;
+        .career__left{
+            padding: 34px 34px 34px 0;
+        }
+    }
+    .vacancies{
+        &__content{
+            padding: 25px 40px 30px;
+        }
+    }
+    .resume{
+        &__inner{
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .career{
+        &__prof{
+            font-size: 15px;
+        }
+        &__desc{
+            font-size: 13px;
+        }
+        &__subtitle{
+            font-size: 15px;
+            margin-top: 20px;
+        }
+    }
+    .vacancies{
+        &__slider{
+            margin-top: 20px;
+        }
+        &__price{
+            margin-top: 13px;
+        }
+        &__link{
+            margin-top: 12px;
+        }
+        .swiper-pagination{
+            margin-top: 6px;
+        }
+    }
+    .resume{
+        .file-input{
+            margin-left: 11px;
+        }
+        &__title{
+            margin-top: 20px;
+            max-width: 220px;
+        }
+        &__form{
+            margin-top: 8px;
+        }
+        &__hint{
+            font-size: 12px;
+            margin-top: 13px;
+        }
+        &__check{
+            margin-top: -2px;
+        }
+        &__btn{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .career{
+        &__left{
+            padding-right: 0;
+            &::before{
+                display: none;
+            }
+        }
+        &__right{
+            width: calc(100% + 40px);
+            margin-left: -20px;
+            img{
+                width: 100% !important;
+                display: block;
+            }
+        }
+    }
+    .career-info{
+        margin-top: 24px;
+        &__inner{
+            grid-template-columns: 1fr;
+        }
+        .career__left{
+            padding-right: 0;
+        }
+    }
+    .vacancies{
+        .container{
+            padding: 0;
+        }
+        &__inner{
+            grid-template-columns: 100%;
+        }
+        &__content{
+            order: -1;
+            padding: 38px 20px;
+        }
+    }
+    .resume{
+        &__inner{
+            grid-template-columns: 1fr;
+            gap: 55px;
+            padding: 0;
+            border: none;
+        }
+        &__right{
+            order: -1;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .career{
+        padding-bottom: 0;
+    }
+    .career-info2{
+        margin-top: 0;
+    }
+    .vacancies{
+        padding: 10px 0;
+    }
+    .resume{
+        padding: 10px 0 16px;
     }
 }

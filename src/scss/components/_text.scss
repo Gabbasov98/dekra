@@ -77,13 +77,43 @@ p {
 }
 
 @media screen and (max-width: 992px) {
+    .display2{
+        font-size: 32px;
+    }
     .display3 {
         font-size: 25px;
+        line-height: 138%;
+    }
+    .display4{
+        font-size: 20px;
+    }
+    .display5{
+        font-size: 18px;
+    }
+    .mlist{
+        li{
+            font-size: 13px;
+            padding-left: 26px;
+            &::before{
+                width: 13px;
+                top: 9px;
+            }
+            &:not(:last-child){
+                margin-bottom: 7.5px;
+            }
+        }
+    }
+    .body-text2{
+        font-size: 13px;
     }
 }
 
 @media screen and (max-width: 576px) {
+    .display2,
     .display3 {
         font-size: 22px;
+    }
+    .display5{
+        font-size: 15px;
     }
 }

@@ -37,13 +37,17 @@
     &__links {
         display: grid;
         grid-template-columns: auto auto;
-        gap: 28.5px 45px;
+        gap: 28.5px 105px;
+        @media screen and (max-width: 1100px) {
+            gap: 28.5px 45px;
+        }
     }
     &__link {
         font-size: 14px;
         font-weight: 500;
         &--active {
             font-weight: 700;
+            color: $primary;
         }
     }
     &__bottom {
@@ -67,17 +71,7 @@
     }
     &__search {
         width: 220px;
-        position: relative;
         margin-top: -13px;
-        &-btn {
-            position: absolute;
-            right: 0;
-            top: 50%;
-            transform: translateY(-50%);
-        }
-        input {
-            padding: 12px 0;
-        }
     }
 }
 

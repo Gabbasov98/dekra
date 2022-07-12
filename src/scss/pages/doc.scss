@@ -19,6 +19,9 @@
     &__subtitle {
         display: flex;
         font-weight: 500;
+        &-wrap{
+            display: flex;
+        }
     }
     &__icon {
         margin-right: 11px;

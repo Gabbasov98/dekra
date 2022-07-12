@@ -70,6 +70,7 @@
 .about-desc {
     padding: 27px 0;
     &__title {
+        line-height: 156.25%;
         color: $primary;
         max-width: 1000px;
     }
@@ -77,6 +78,11 @@
         margin-top: 25px;
         column-count: 2;
         column-gap: 50px;
+        p{
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
     }
 }
 

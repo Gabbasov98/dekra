@@ -144,13 +144,13 @@
     align-items: center;
     justify-content: center;
     &__item {
-        height: 40px;
-        min-width: 35px;
+        height: 32px;
+        min-width: 28px;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 0 6px;
-        font-size: 18px;
+        font-size: 20px;
         border-radius: 1px;
         &:hover,
         &--active {

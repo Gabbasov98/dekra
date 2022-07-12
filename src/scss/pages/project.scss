@@ -1,11 +1,11 @@
 @import "../vars.scss";
 .project-info {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 51.8% 48.2%;
     min-height: 300px;
     &__left {
         border-right: 1px solid rgba($gray, .6);
-        padding: 40px 48px 40px 65px;
+        padding: 40px 72px 52px 65px;
     }
     &__right {
         display: flex;
@@ -74,6 +74,9 @@
         margin-top: 26px;
         column-count: 2;
         column-gap: 76px;
+      li{
+        display: inline-flex;
+      }
     }
 }
 

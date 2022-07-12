@@ -29,3 +29,25 @@
         }
     }
 }
+
+@media screen and (max-width: 768px){
+    .breadcrumbs{
+        white-space: nowrap;
+        overflow-x: auto;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        padding: 0 20px;
+        &::-webkit-scrollbar {
+            height: 0;
+            width: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .breadcrumbs{
+        width: calc(100% + 24px);
+        margin-left: -12px;
+        padding: 0 12px;
+    }
+}

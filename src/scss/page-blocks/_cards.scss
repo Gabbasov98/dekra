@@ -105,6 +105,7 @@
         background-color: rgba(#fff, .3);
         box-shadow: 0 3px 14px rgba(0, 0, 0, .16);
         cursor: pointer;
+        border-radius: 1px;
     }
     &__btn {
         svg {
@@ -112,8 +113,8 @@
         }
     }
     &__wrap {
-        padding: 30px 60px 15px;
-        max-width: 725px;
+        padding: 30px 0 15px;
+        max-width: 645px;
     }
 }
 
@@ -174,6 +175,38 @@
     }
 }
 
+@media screen and (max-width: 992px){
+    .bio-card{
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+        &__show{
+            padding: 12px 20px;
+            min-height: 54px;
+        }
+        &__btn{
+            svg{
+                width: 18px;
+                height: auto;
+            }
+        }
+        &__wrap{
+            padding: 20px 0 10px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .news-card{
+        &__img{
+            height: unset;
+        }
+        &__content{
+            padding: 35px 25px 47px;
+        }
+    }
+}
+
 @media screen and (max-width: 576px) {
     .project-card {
         &__title {
@@ -183,12 +216,34 @@
             font-size: 13px;
         }
     }
+
+    .news-card{
+        &__date{
+            font-size: 15px;
+        }
+        &__desc{
+            margin-top: 10px;
+        }
+        &__arrow{
+            svg{
+                width: 25px;
+                height: auto;
+                transform: translate(10px,1px);
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 360px) {
     .project-card {
         &__img {
             height: 270px;
+        }
+    }
+
+    .news-card{
+        &__content{
+            padding: 20px 10px 30px;
         }
     }
 }

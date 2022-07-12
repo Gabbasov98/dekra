@@ -93,8 +93,10 @@
     &__item {
         border: 1px solid $gray;
         padding: 15px 17px 23px;
-        &:not(:last-child) {
-            border-right: none;
+        @media screen and (min-width: 768px){
+            &:not(:last-child) {
+                border-right: none;
+            }
         }
         &-img {
             height: 216px;
@@ -138,4 +140,202 @@
 
 .bio {
     padding: 60px 0 80px;
+    border-bottom: 1px solid rgba($black, .15);
+}
+
+@media screen and (max-width: 1150px) {
+    .about-ceo{
+        padding: 25px;
+        grid-template-columns: 40% auto;
+        gap: 50px;
+        &__content{
+            padding: 0;
+        }
+        &__desc{
+            &::before{
+                margin-right: 5px;
+            }
+            &::after{
+                margin-left: 5px;
+            }
+        }
+    }
+
+    .history{
+        &__content{
+            padding: 34px 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .about{
+        &__desc{
+            margin-top: 22px;
+            font-size: 18px;
+        }
+    }
+
+    .about-ceo{
+        margin-top: 35px;
+        display: block;
+        &__img{
+            max-width: 300px;
+            float: left;
+            margin: 0 30px 10px 0;
+        }
+        &__desc{
+            &::before{
+                right: unset;
+                left: 310px;
+                top: 4px;
+                font-size: 30px;
+            }
+            &::after{
+                font-size: 30px;
+                transform: translateY(-3px);
+            }
+        }
+        &__name{
+            margin-top: 25px;
+        }
+    }
+
+    .about-desc{
+        &__items{
+            column-count: 1;
+            margin-top: 20px;
+        }
+    }
+
+    .activity{
+        &__item{
+            padding: 10px 10px 18px;
+            &-img{
+                height: 180px;
+            }
+            &-title{
+                font-size: 13px;
+                margin-top: 16px;
+            }
+        }
+    }
+
+    .history{
+        &__desc{
+            font-size: 13px;
+            margin-top: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .about-ceo{
+        padding: 16px 15px 41px;
+        &__img{
+            max-width: 250px;
+        }
+        &__desc{
+            font-size: 13px;
+            &::before{
+                left: 260px;
+            }
+        }
+        &__name{
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        &__prof{
+            margin-top: 2.7px;
+            font-size: 13px;
+        }
+    }
+
+    .activity{
+        &__items{
+            grid-template-columns: 50% 50%;
+        }
+        &__item{
+            @media screen and (min-width: 380px){
+                &:nth-child(1),
+                &:nth-child(2){
+                    border-bottom: none;
+                }
+                &:nth-child(even){
+                    border-left: none;
+                }
+            }
+        }
+    }
+
+    .history{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .about{
+        padding: 0 0 30px;
+    }
+
+    .about-ceo{
+        &__img{
+            float: unset;
+            max-width: 100%;
+            margin: 0 0 20px;
+        }
+        &__content{
+            padding-left: 23px;
+        }
+        &__desc{
+            &::before{
+                left: unset;
+                right: 100%;
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .about-desc{
+        padding: 30px 0 15px;
+        &__title{
+            font-size: 18px;
+        }
+    }
+
+    .activity{
+        padding: 15px 0;
+        &__items{
+            margin-top: 20px;
+        }
+        &__item{
+            &-img{
+                height: 125px;
+            }
+        }
+    }
+
+    .history{
+        margin-top: 20px;
+    }
+
+    .bio{
+        padding: 40px 0 0;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .activity{
+        &__items{
+            grid-template-columns: 100%;
+        }
+        &__item{
+            &:first-child{
+                border-bottom: none;
+            }
+            &-img{
+                height: unset;
+            }
+        }
+    }
 }

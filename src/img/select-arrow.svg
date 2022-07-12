@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="22.121" height="12.121" viewBox="0 0 22.121 12.121">
-  <g id="select-arrow" transform="translate(22.817 -30.745) rotate(90)">
-    <path id="path85" d="M83-157.021,73-167" transform="translate(-41.191 168.757)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
-    <path id="path87" d="M83-160l-10,9.98" transform="translate(-41.191 171.777)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="1.5" fill-rule="evenodd"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="22.828" height="12.828" viewBox="0 0 22.828 12.828">
+  <g id="Group" transform="translate(23.17 -30.391) rotate(90)">
+    <path id="path85" d="M83-157.021,73-167" transform="translate(-41.191 168.757)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2" fill-rule="evenodd"/>
+    <path id="path87" d="M83-160l-10,9.98" transform="translate(-41.191 171.777)" fill="none" stroke="#e56606" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="79.84" stroke-width="2" fill-rule="evenodd"/>
   </g>
 </svg>
+

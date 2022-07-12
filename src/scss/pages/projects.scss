@@ -1,6 +1,10 @@
 @import "../vars.scss";
 .projects {
     padding: 30px 0 50px;
+    &__inner{
+        border-bottom: 1px solid rgba($black, .15);
+        padding-bottom: 40px;
+    }
     &__title {
         margin-top: 8px;
     }
@@ -29,9 +33,7 @@
             border-top: 1px solid #d1d1d1;
         }
     }
-    &__more {
-        display: none;
-    }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -44,18 +46,15 @@
                 }
             }
         }
-        &__more {
-            display: flex;
-            height: 51px;
-            width: 500px;
-            max-width: 100%;
-            margin: 40px auto 0;
-            font-size: 13px;
-            font-weight: 500;
-            text-transform: uppercase;
-        }
-        .pagination {
-            display: none;
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .projects{
+        &__inner{
+            padding: 0;
+            border: none;
         }
     }
 }

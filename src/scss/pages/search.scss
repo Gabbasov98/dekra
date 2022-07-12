@@ -20,3 +20,21 @@
         margin-top: 50px;
     }
 }
+
+@media screen and (max-width: 576px){
+    .search{
+        padding: 0 0 25px;
+        &__field{
+            margin-top: 12px;
+        }
+        &__found{
+            margin-top: 50px;
+        }
+        &__hint{
+            margin-top: 20px;
+        }
+        &__link{
+            margin-top: 40px;
+        }
+    }
+}

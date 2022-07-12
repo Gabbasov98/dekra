@@ -89,7 +89,7 @@
         margin-top: 54px;
         position: relative;
         .swiper {
-            &-pagination{
+            &-pagination {
                 display: none;
             }
             &-container {
@@ -97,8 +97,8 @@
                 max-width: 100%;
                 margin: 0 auto;
             }
-            &-slide{
-                img{
+            &-slide {
+                img {
                     width: 100%;
                     display: block;
                 }
@@ -121,145 +121,147 @@
     }
 }
 
-@media screen and (max-width: 1150px){
-    .project-info{
+@media screen and (max-width: 1150px) {
+    .project-info {
         min-height: unset;
         &__left,
-        &__right{
+        &__right {
             padding: 30px 40px;
         }
     }
-    .project-desc{
-        &__left{
+    .project-desc {
+        &__left {
             padding: 35px 45px;
         }
     }
 }
 
-@media screen and (max-width: 992px){
-    .project-info{
+@media screen and (max-width: 992px) {
+    .project-info {
         min-height: unset;
-        &__left{
+        &__left {
             padding: 26px 20px;
         }
-        &__right{
+        &__right {
             padding: 29px 20px;
         }
-        &__prop{
-            &-title{
+        &__prop {
+            &-title {
                 font-size: 26px;
-                span{
+                span {
                     font-size: 14px;
                 }
             }
-            &-desc{
+            &-desc {
                 font-size: 13px;
             }
         }
-        &__items{
+        &__items {
             margin-top: 25px;
         }
-        &__item{
+        &__item {
             font-size: 13px;
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: 5px;
             }
         }
-        &__desc{
+        &__desc {
             font-size: 13px;
         }
     }
-    .project-desc{
+    .project-desc {
         margin-top: 40px;
-        &__left{
+        &__left {
             padding: 33px 20px;
         }
-        &__text{
+        &__text {
             font-size: 13px;
         }
     }
-    .specific{
-        &__items{
+    .specific {
+        &__items {
             column-gap: 30px;
             margin-top: 15px;
         }
     }
-    .progress{
-        .swiper-container{
+    .progress {
+        .swiper-container {
             width: 500px;
         }
     }
 }
 
-@media screen and (max-width: 768px){
-    .project-info{
+@media screen and (max-width: 768px) {
+    .project-info {
         grid-template-columns: 1fr;
-        &__left{
+        &__left {
             border-right: none;
-            border-bottom: 1px solid rgba(209,209,209,.6);
+            border-bottom: 1px solid rgba(209, 209, 209, .6);
         }
     }
-    .project-desc{
+    .project-desc {
         grid-template-columns: 1fr;
     }
-    .specific{
-        &__items{
-           column-count: 1;
+    .specific {
+        &__items {
+            column-count: 1;
         }
     }
 }
 
-@media screen and (max-width: 576px){
-    .specific{
+@media screen and (max-width: 576px) {
+    .specific {
         padding: 16px 0;
     }
-    .progress{
+    .progress {
         padding: 16px 0 54px;
         position: relative;
-        &__link{
+        &__link {
             height: 42px;
             width: 100%;
             font-size: 15px;
             font-weight: 500;
         }
-        &__slider{
+        &__slider {
             margin-top: 40px;
+            .swiper {
+                &-container {
+                    width: 100%;
+                }
+                &-button {
+                    &-prev,
+                    &-next {
+                        display: none;
+                    }
+                }
+                &-pagination {
+                    display: flex;
+                    &-bullet {
+                        width: 4px;
+                        height: 4px;
+                        border-radius: 15px;
+                        background: #fff;
+                        &-active {
+                            width: 12px;
+                        }
+                    }
+                }
+            }
         }
-        &__all{
-            &-projects{
+        &__all {
+            &-projects {
                 position: absolute;
                 bottom: 16px;
                 left: 20px;
             }
         }
-        .swiper{
-            &-container{
-                width: 100%;
-            }
-            &-button{
-                &-prev,
-                &-next{
-                    display: none;
-                }
-            }
-            &-pagination{
-                display: flex;
-                &-bullet{
-                    width: 4px;
-                    height: 4px;
-                    border-radius: 15px;
-                    background: #fff;
-                    &-active{
-                        width: 12px;
-                    }
-                }
-            }
-        }
+
     }
 }
-@media screen and (max-width: 380px){
-    .progress{
-        &__link{
+
+@media screen and (max-width: 380px) {
+    .progress {
+        &__link {
             left: 12px;
         }
     }

@@ -18,12 +18,12 @@
     }
     &__subtitle {
         display: flex;
-        align-items: center;
         font-weight: 500;
     }
     &__icon {
         margin-right: 11px;
         flex-shrink: 0;
+        padding-top: 2px;
     }
     &__subitems {
         padding: 15px 0 23px 28px;
@@ -36,6 +36,36 @@
         color: $primary;
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .doc{
+        padding: 0 0 25px;
+        &__inner{
+            border: none;
+            padding: 0;
+        }
+        &__items{
+            margin-top: 21px;
+        }
+        &__item{
+            &:not(:last-child){
+                margin-bottom: 15px;
+            }
+        }
+        &__subtitle{
+            line-height: 146%;
+        }
+        &__subitems{
+            padding: 13px 0 20px 20px;
+        }
+        &__icon{
+            margin-right: 7px;
+            img{
+                width: 12.3px;
+            }
         }
     }
 }

@@ -20,10 +20,8 @@
     &__phone {
         display: block;
         font-weight: 700;
-        margin-top: 20px;
     }
     &__mail {
-        margin-top: 20px;
         a {
             color: $primary;
             &:hover {
@@ -54,5 +52,43 @@
 
 .map {
     height: 490px;
-    margin-top: 80px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 1150px){
+    .contacts{
+        &__items{
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px){
+    .contacts{
+        &__items{
+            margin-top: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .contacts{
+        &__items{
+            grid-template-columns: 1fr;
+        }
+    }
+    .map{
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .contacts{
+        padding: 0 0 25px;
+        &__inner{
+            border: none;
+            padding: 0;
+        }
+    }
 }

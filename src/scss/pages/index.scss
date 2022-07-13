@@ -95,9 +95,15 @@
         background-color: #fff;
         box-shadow: 0 0 30px rgba(#000, .12);
     }
+    .swiper-container{
+        width: 100%;
+    }
     &__items {
-        display: grid;
-        grid-template-columns: repeat(4, 25%);
+        @media screen and (min-width: 992px){
+            transform: unset !important;
+            display: grid;
+            grid-template-columns: repeat(4, 25%);
+        }
     }
     &__item {
         padding: 34px 20px 10px;
@@ -520,17 +526,11 @@
     }
 
     .info {
-        &__items {
-            display: flex;
-            overflow-x: auto;
-            &::-webkit-scrollbar {
-                width: 0;
-                height: 0;
-            }
+        .swiper-container{
+            overflow: hidden;
         }
-        &__item {
-            flex-shrink: 0;
-            width: calc(100% / 3);
+        &__items {
+
         }
         &__text {
             padding: 45px;

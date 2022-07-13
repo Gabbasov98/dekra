@@ -37,9 +37,35 @@ function collectionSlider() {
     })
 }
 
+function infoSlider() {
+    var swiper = new Swiper('.info .swiper-container', {
+        slidesPerView: 4,
+        spaceBetween: 0,
+        speed: 1000,
+        autoplay: {
+            delay: 5000,
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 2,
+                loop: true,
+            },
+            576: {
+                slidesPerView: 3,
+                loop: true,
+            },
+            992: {
+                slidesPerView: "auto",
+                loop: false,
+            },
+        }
+    })
+}
+
 
 mainSlider()
 collectionSlider()
+infoSlider()
 
 let mainImg = document.querySelector(".main__img")
 let mainTitle = document.querySelector(".main__title")

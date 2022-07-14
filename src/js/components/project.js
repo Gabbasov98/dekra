@@ -1,7 +1,7 @@
 function progressSlider() {
     var swiper = new Swiper('.progress__slider .swiper-container', {
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 12,
         centeredSlides: true,
         loop: true,
         navigation: {

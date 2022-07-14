@@ -132,6 +132,7 @@
             padding: 30px 40px;
         }
     }
+
     .project-desc {
         &__left {
             padding: 35px 45px;
@@ -172,6 +173,7 @@
             font-size: 13px;
         }
     }
+
     .project-desc {
         margin-top: 40px;
         &__left {
@@ -181,12 +183,14 @@
             font-size: 13px;
         }
     }
+
     .specific {
         &__items {
             column-gap: 30px;
             margin-top: 15px;
         }
     }
+
     .progress {
         .swiper-container {
             width: 500px;
@@ -202,9 +206,11 @@
             border-bottom: 1px solid rgba(209, 209, 209, .6);
         }
     }
+
     .project-desc {
         grid-template-columns: 1fr;
     }
+
     .specific {
         &__items {
             column-count: 1;
@@ -220,16 +226,17 @@
         padding: 16px 0 54px;
         position: relative;
         &__link {
-            height: 42px;
             width: 100%;
             font-size: 15px;
             font-weight: 500;
         }
         &__slider {
             margin-top: 40px;
+            padding: 0 20px;
             .swiper {
                 &-container {
                     width: 100%;
+                    overflow: hidden;
                 }
                 &-button {
                     &-prev,
@@ -266,6 +273,12 @@
     .progress {
         &__link {
             left: 12px;
+        }
+        &__slider{
+            padding: 0 10px;
+        }
+        &__all-projects{
+            left: 10px;
         }
     }
 }

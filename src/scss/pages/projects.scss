@@ -75,6 +75,12 @@
     }
 }
 
+@media screen and (max-width: 576px){
+    .projects{
+        padding: 0 0 23px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .projects {
         .project-card {

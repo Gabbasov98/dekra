@@ -44,6 +44,21 @@
     }
 }
 
+@media screen and (max-width: 576px){
+    .breadcrumbs{
+        &__item{
+            font-size: 12px;
+            &:not(:first-child){
+                margin-left: 16px;
+                &::before{
+                    height: 12px;
+                    top: 2px;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 380px){
     .breadcrumbs{
         width: calc(100% + 24px);

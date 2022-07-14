@@ -99,7 +99,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
     .team{
         padding-top: 0;
         &__items{
@@ -113,11 +113,7 @@
     }
     .team-card{
         &__img{
-            height: unset;
-            img{
-                position: static;
-                transform: unset;
-            }
+            height: 470px;
         }
     }
 }
@@ -125,6 +121,9 @@
 @media screen and (max-width: 576px){
     .team-card{
         padding: 17px 17px 40px;
+        &__img{
+            height: 420px;
+        }
         &__name{
             margin-top: 21px;
             font-size: 18px;
@@ -139,6 +138,38 @@
         &__inner{
             padding-bottom: 0;
             border: none;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .team-card{
+        &__img{
+            height: 370px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px){
+    .team-card{
+        &__img{
+            height: 315px;
+        }
+    }
+}
+
+@media screen and (max-width: 380px){
+    .team-card{
+        &__img{
+            height: 295px;
+        }
+    }
+}
+
+@media screen and (max-width: 350px){
+    .team-card{
+        &__img{
+            height: 265px;
         }
     }
 }

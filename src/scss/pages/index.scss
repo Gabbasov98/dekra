@@ -148,6 +148,7 @@
 .video {
     margin-top: 105px;
     position: relative;
+    display: block;
     &:before {
         content: '';
         position: absolute;

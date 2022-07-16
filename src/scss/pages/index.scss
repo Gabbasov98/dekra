@@ -450,6 +450,7 @@
             }
         }
     }
+
     .collection {
         .swiper {
             &-slide {
@@ -457,6 +458,7 @@
             }
         }
     }
+
     .blog-index {
         &__inner {
             gap: 32px 10px;
@@ -479,10 +481,11 @@
                 height: 240px;
             }
             &-content {
-                padding: 35px 20px;
+                padding: 35px 20px 43.5px;
             }
             &-date {
                 font-size: 15px;
+                line-height: 100%;
             }
             &-desc {
                 margin-top: 11px;

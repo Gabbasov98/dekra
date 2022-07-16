@@ -1,8 +1,8 @@
 function progressSlider() {
     var swiper = new Swiper('.progress__slider .swiper-container', {
-        slidesPerView: 3,
+        slidesPerView: "auto",
         spaceBetween: 12,
-        // centeredSlides: true,
+        centeredSlides: true,
         loop: true,
         navigation: {
             nextEl: '.progress__slider .swiper-button-next',
@@ -13,14 +13,6 @@ function progressSlider() {
             type: 'bullets',
             clickable: true,
         },
-        breakpoints: {
-            320: {
-                slidesPerView: 1,
-            },
-            576: {
-                slidesPerView: 3,
-            },
-        }
     })
 }
 

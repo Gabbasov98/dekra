@@ -279,6 +279,9 @@
         align-items: center;
     }
     .swiper {
+        &-container{
+            width: calc(100% + (100% / 3));
+        }
         &-button {
             &-prev,
             &-next {

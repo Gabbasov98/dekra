@@ -98,8 +98,9 @@
 }
 
 .career-info2 {
+    margin: 0;
     color: #fff;
-    padding: 43px 0;
+    padding: 37px 0 43px;
     .career {
         &__left {
             padding: 62px 62px 62px 0;
@@ -217,7 +218,7 @@
     .career-info2{
         background-color: $primary;
         padding: 0;
-        margin-bottom: 26px;
+        margin: 37px 0 26px;
         .career__left{
             padding: 34px 34px 34px 0;
         }

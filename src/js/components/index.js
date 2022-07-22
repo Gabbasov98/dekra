@@ -43,7 +43,7 @@ function infoSlider() {
         spaceBetween: 0,
         speed: 1000,
         autoplay: {
-            delay: 5000,
+            delay: 2000,
         },
         breakpoints: {
             320: {

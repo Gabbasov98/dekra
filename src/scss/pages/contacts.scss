@@ -53,6 +53,20 @@
 .map {
     height: 490px;
     margin-top: 40px;
+    display: none;
+    &--active{
+        display: block;
+    }
+}
+
+.contacts-tab{
+    &:hover{
+        cursor: pointer;
+        color: $primary;
+    }
+    &.orange-text{
+        pointer-events: none;
+    }
 }
 
 @media screen and (max-width: 1150px){

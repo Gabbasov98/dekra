@@ -310,6 +310,20 @@
     }
     &__slider {
         margin-top: 27px;
+        position: relative;
+        &-prev,
+        &-next{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            z-index: 10;
+        }
+        &-prev{
+            right: 100%;
+        }
+        &-next{
+            left: 100%;
+        }
     }
 }
 

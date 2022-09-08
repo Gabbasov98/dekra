@@ -14,6 +14,25 @@ function mainSlider() {
     })
 }
 
+
+window.onresize = function() {
+    setCollectionBtnWidth()
+};
+
+
+let collectionPrev = document.querySelector(".collection__slider-prev")
+let collectionNext = document.querySelector(".collection__slider-next")
+
+setCollectionBtnWidth()
+
+function setCollectionBtnWidth() {
+    let containerWidth = document.querySelector(".collection__slider").offsetWidth
+    let pageWidth = window.innerWidth
+    let btnWidth = (pageWidth - containerWidth) / 2
+    collectionPrev.style.width = `${btnWidth}px`
+    collectionNext.style.width = `${btnWidth}px`
+}
+
 function collectionSlider() {
     var swiper = new Swiper('.collection .swiper-container', {
         slidesPerView: 1,
@@ -35,6 +54,31 @@ function collectionSlider() {
             },
         }
     })
+
+    collectionPrev.onmouseover = function(){
+        swiper.autoplay.start();
+        swiper.autoplay.delay = 500;
+        swiper.autoplay.reverseDirection = true;
+    }
+
+    collectionPrev.onmouseleave = function(){
+        swiper.autoplay.stop();
+        swiper.autoplay.reverseDirection = false;
+    }
+
+    collectionNext.onmouseover = function(){
+        swiper.autoplay.start();
+        swiper.autoplay.delay = 500;
+    }
+
+    collectionNext.onmouseleave = function(){
+        swiper.autoplay.stop();
+    }
+
+    // $(".swiper-container").mouseenter(function() {
+    //     mySwiper.autoplay.stop();
+    //     console.log('slider stopped');
+    // });
 }
 
 function infoSlider() {
@@ -75,17 +119,14 @@ let mainDesc = document.querySelector(".main__desc")
 document.addEventListener("DOMContentLoaded", ready);
 
 function ready() {
-
     if (mainImg && mainTitle && mainDesc) {
         animateMainContent()
     }
-
 };
 
 
 function animateMainContent() {
     mainImg.classList.add("main__animate--show")
-    console.log(true);
     setTimeout(() => {
         mainTitle.classList.add("main__animate--show")
         setTimeout(() => {
@@ -93,3 +134,5 @@ function animateMainContent() {
         }, 800);
     }, 800);
 }
+
+

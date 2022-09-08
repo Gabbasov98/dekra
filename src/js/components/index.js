@@ -55,7 +55,7 @@ function collectionSlider() {
         }
     })
 
-    collectionPrev.onmouseover = function(){
+    collectionPrev.onmouseenter = function(){
         swiper.autoplay.start();
         swiper.autoplay.delay = 500;
         swiper.autoplay.reverseDirection = true;
@@ -66,7 +66,7 @@ function collectionSlider() {
         swiper.autoplay.reverseDirection = false;
     }
 
-    collectionNext.onmouseover = function(){
+    collectionNext.onmouseenter = function(){
         swiper.autoplay.start();
         swiper.autoplay.delay = 500;
     }
